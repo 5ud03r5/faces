@@ -8,3 +8,6 @@ Users:
 login: testUser
 login: testUser2
 password: for_Tests123@
+
+
+#API docs: /api/docs
