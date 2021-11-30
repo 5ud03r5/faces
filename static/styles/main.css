@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: relative; 
+    
+  
+    z-index: 1;
+    margin: 0;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #0446aa;
+    color: white;
+  }
+
+  .topnav a.change_password {
+    right: 590px;
+    position: absolute;
+  }
+
+  .topnav a.profiles {
+    right: 500px;
+    position: absolute;
+  }
+  .topnav a.admin_panel {
+    right: 750px;
+    position: absolute;
+  }
+
+  .topnav a.loggedas {
+    right: 330px;
+    position: absolute;
+  }
+
+  .topnav a.messages {
+    right: 230px;
+    position: absolute;
+  }
+
+  .topnav a.logout {
+
+    right:20px;
+    position: absolute;
+  }
+
+  .topnav a.profile {
+
+    right:115px;
+    position: absolute;
+  }
+
+  
+
+
+.search {
+
+    margin: 1em;
+
+}
+
+
+
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit] {
+  background-color: #0446aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-ask {
+
+  text-align: center;
+}
+
+.account-ask a {
+  text-decoration: None;
+  color: #0446aa;
+}
+
+
+.login-form-label {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.posts_and_comments {
+ 
+  width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts_and_comments form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  
+  
+  
+}
+
+.profiless {
+ 
+  width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profiless img {
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.profiless a {
+  text-decoration: none;
+  color: #0446aa;
+  text-align: center;
+  font-family: 'Yuji Syuku', serif;
+  
+}
+
+input[type=search] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.message {
+  width: 500px;
+  border: 2px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: 'Yuji Syuku', serif;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 200px;
+}
+
+.message .message_received {
+  text-align: right;
+  
+}
+
+
+
+.message .name {
+  font-size: 12px;
+}
+
+.message .body {
+  background: rgb(202, 202, 202);
+  display: block;
+  line-height: 25px;
+  padding: 2px;
+  width: auto;
+  height: auto;
+    
+}
+
+.posts_and_comments form {
+  border: none;
+  width: 95%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+.register form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.uppage .img {
+  border-radius: 50%;
+}
+
+.uppage img {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+  
+}
+
+.uppage {
+  text-align: center;
+  font-family: 'Yuji Syuku', serif;
+  
+  
+}
+
+.uppage a{
+  text-decoration: none;
+  color: #0446aa;
+  text-align: center;
+  font-family: 'Yuji Syuku', serif;
+}
+
+.posts_and_comments img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts_and_comments input[type=submit] {
+
+  background-color: #0446aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  display: block;
+    margin-left: 60%;
+    
+
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.post {
+  margin-top: 10px;
+  border: 3px solid #f1f1f18e;
+  font-family: 'Yuji Syuku', serif;
+
+}
+
+.post_add form {
+  
+  width: 500px;
+  border: none; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+}
+
+
+.post a {
+ 
+  text-decoration: none;
+  margin-left: 85%;
+}
+
+
+
+
+
+.comment {
+  font-family: 'Yuji Syuku', serif;
+  border: 3px solid #f1f1f18e;
+}
+
+.comment form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  
+  
+  
+}
+
+.comment a {
+ 
+  text-decoration: none;
+  margin-left: 85%;
+}
+
+.comment-descriptor {
+  margin-top: 10px;
+  
+  font-family: 'Yuji Syuku', serif;
+
+
+}
+
+.send_message form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  
+  
+  
+}
+
+.update {
+  text-align: center;
+}
+.update input[type=email] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.update form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+}
+
+
+.delete {
+  text-align: center;
+  margin-top: 20px;
+}
+.delete form {
+  border: 3px solid #f1f1f1;
+    width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.delete a {
+  background-color: #0446aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 360px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  text-decoration: none;
+  
+
+}
+
+.login_form {
+ 
+    border: 3px solid #f1f1f1;
+    width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    
+    
+    
+  
+}
+
+
+
+.messagess {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.messagess a {
+  text-decoration: none;
+  color: white;
+  background-color:#0446aa;
+  display: block;
+    width: 115px;
+    height: 25px;
+    background: #0446aa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

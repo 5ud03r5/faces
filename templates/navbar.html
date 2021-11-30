@@ -1,0 +1,16 @@
+<div class="topnav">
+    <a class="active" href="{% url 'main_page' %}">Home</a>
+    
+    {% if user.is_authenticated %}
+
+    {% if user.is_superuser %}
+    <a class="admin_panel" href="/admin">Admin Panel</a>
+    {% endif %}
+    <a class="change_password" href="{% url 'change_password' request.user.id %}?next=/profile/{{profile.id}}">Change Password</a>
+    <a class="loggedas" href="">Logged in as {{request.user.profile}}</a>
+    <a class="profiles" href="{% url 'profiles' %}">Profiles</a>
+    <a class="messages" href="{% url 'messages' %}">Messages</a>
+    <a class="profile" href="{% url 'profile' request.user.profile.id %}">My Profile</a>
+    <a class="logout" href="{% url 'logout' %}">Log Out</a>
+    {% endif %}
+  </div>

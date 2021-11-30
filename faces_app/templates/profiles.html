@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<div class="profiless">
+    <div>
+        <form action="" method="GET">
+            
+            
+            <input  type="search" name="search" placeholder="Search">
+
+        </form>
+        
+        
+    
+    
+    </div>
+
+    {% for profile in profiles %}
+    <div>
+    <a href="{% url 'profile' profile.id %}">
+        <div><img  src="{{ profile.profile_image.url }}" ></div>
+        <div>
+            {{ profile.first_name }} 
+            {% if profile.last_name != None %}
+            {{ profile.last_name }}
+            {% endif %}
+        </div>
+    </a>
+    
+    </div>
+    {% endfor %}
+
+</div>
+
+
+
+{% endblock content %}

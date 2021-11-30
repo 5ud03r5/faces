@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="update">
+    <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form.visible_fields %}
+                    {{field.label}} {{field}}
+                    <br>
+                    {% endfor %}
+        <input type="submit" value="Update">
+    </form>
+</div>
+{% endblock content %}

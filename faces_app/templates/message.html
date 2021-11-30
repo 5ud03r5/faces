@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<div>
+            
+        <div class="message">
+            {% for message in messages %}   
+                {% if request.user.profile.id == message.sender_id and  profile.id == message.receipient_id %}
+                
+                    <div class="message_received">
+                        
+                        <div class="name"><img style="max-width: 10px;" src="{{ profile.profile_image.url }}" alt="">{{message.sender}}</div>
+                        <div class="body">{{message.body}}</div>
+                        <hr>
+
+
+                    </div>
+                    
+                {% elif request.user.profile.id == message.receipient_id and profile.id == message.sender_id %}
+                    <div class="message_send">
+                        
+                        <div class="name"><img style="max-width: 10px;" src="{{ profile.profile_image.url }}" alt="">{{message.sender}}</div>
+                        <div class="body">{{message.body}}</div>
+                    </div>
+                    <hr>
+                   
+                {% endif %}
+                
+            {% endfor %}
+        </div>
+        <div class="send_message">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% for field in form.visible_fields %}
+                <div>{{field}}</div>
+                {% endfor %}
+
+                <input type="submit" value="Send">
+            </form>
+            <br>
+        </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<div class="messagess">
+            
+                {% for profile in profiles %}
+
+                        <div><a href="{% url 'conversation' profile.id %}">{{profile.first_name}}</a></div>
+                    
+                    
+                {% endfor %}
+            
+</div>  
+
+{% endblock content %}

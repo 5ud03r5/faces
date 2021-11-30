@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+
+
+
+    <div class="post_add">
+        <form action="{% url 'main_page' %}" method="POST", enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form_post.visible_fields %}
+            <div>{{field}}</div>
+            {% endfor %}
+            <input type="submit" name="type" value="Add Post">
+        </form>
+    </div>
+    <div class="posts_and_comments">
+        {% for post in posts %}
+        <div class="post">
+                Posted by {{post.created_by}} on {{post.owner}} table
+            {% if post.picture %}
+            <p><img src="{{ post.picture.url }}" ></p>
+            {% endif %}
+            
+            <p>{{post.body|linebreaksbr}}</p>
+            {% if request.user.profile == post.owner %}
+                <a class="delete" href="{% url 'delete' post.id %}">Delete</a>
+            {% endif %}
+        </div>
+                <div class="comment-descriptor">Comments:</div>
+                {% for comment in post.comment_set.all %}
+                <div class="comment-descriptor">Added by {{comment.owner}}</div>
+                <div class="comment">{{comment.body}} <a href="{% url 'delete' comment.id %}">Delete</a></div>
+                {% if request.user.profile == comment.owner %}
+                
+            {% endif %}
+                {% endfor %}
+    
+            <form action="{% url 'main_page' %}?post={{post.id}}" method="POST", enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form_comment.visible_fields %}
+                <div>{{field}}</div>
+                {% endfor %}
+
+                <input type="submit" name="type" value="Add Comment">
+            </form>
+            <br>
+        {% endfor %}
+    </div>
+
+
+{% endblock content %}
