@@ -1,13 +1,9 @@
-Django admin:
+Social Media site created only for learning purposes with follwing functions:
 
-login: admin
-password: DjangoAdmin123@
-
-Users:
-
-login: testUser
-login: testUser2
-password: for_Tests123@
-
-
-#API docs: /api/docs
+*Login
+*Registration/User with profile creation
+*Profile Search
+*Messaging system
+*Adding posts with or withouth pictures onsomeone's table
+*Commenting posts
+*My Profile access with update function
