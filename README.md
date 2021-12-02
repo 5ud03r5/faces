@@ -7,3 +7,5 @@ Social Media site created only for learning purposes with follwing functions:
 - Adding posts with or withouth pictures on someone's table
 - Commenting posts
 - My Profile access with update function
+
+Accessible API with documentation
